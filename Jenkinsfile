@@ -1,5 +1,7 @@
 node
 {
+  
+  
 stage 'integrate'
 echo 'integrated'
 stage 'Test'
