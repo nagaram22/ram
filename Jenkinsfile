@@ -1,22 +1,22 @@
-
 pipeline {
     agent any 
 
     stages {
         stage('Build') { 
             steps { 
-                sh 'make' 
+                sh 'pwd' 
             }
         }
         stage('Test'){
             steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
+                sh 'java -version'
+                
             }
         }
         stage('Deploy') {
             steps {
-                sh 'make publish'
+                sh 'ls'
+                sh 'pwd'
             }
         }
     }
